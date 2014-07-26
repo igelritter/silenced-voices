@@ -48,7 +48,7 @@ Buried Gas Station is a room. "Sun light filtering through the hole in the roof 
 [room 5]
 Base of Radio Tower is a room. "Rising above one of the higher dunes you see the tower of an abandoned radio station. You see a way you might climb the tower. Exits are UP and EAST."
 [make Stantion to pull away from tower]
-	A loose stantion is here. "At the bottom of the tower there is a few loose stantions, it loks like the tower might collapse any second."
+	A loose stantion is here. "At the bottom of the tower there is a few loose stantions, it looks like the tower might collapse any second."
 	After taking loose stantion, say "You have pulled free one of the stantions. It is hollow and there are several smaller holes alongside it."
 [add path to 5i_u, 6_e]
 Top of the Radio Tower is above Radio Tower.
