@@ -46,19 +46,21 @@ Buried Gas Station is a room. "Sun light filtering through the hole in the roof 
 
 
 [room 5]
-Base of Radio Tower is a room. "Rising above one of the higher dunes you see the tower of an abandoned radio station. At the bottom there is a few loose stantions, it looks like the tower might collapse any second. You see a way you might climb the tower. Exits are UP and EAST."
+Base of Radio Tower is a room. "Rising above one of the higher dunes you see the tower of an abandoned radio station. You see a way you might climb the tower. Exits are UP and EAST."
 [make Stantion to pull away from tower]
+	A loose stantion is here. "At the bottom of the tower there is a few loose stantions, it loks like the tower might collapse any second."
+	After taking loose stantion, say "You have pulled free one of the stantions. It is hollow and there are several smaller holes alongside it."
 [add path to 5i_u, 6_e]
 Top of the Radio Tower is above Radio Tower.
 [room 5i]
-Top of the Radio Tower is a room. "The radio tower sways slightly in the wind. The wastes stretch out in every direction. There is a rusting radio transceiver bolted to the structure. Below is the base of the radio tower. Exits are DOWN. "
-
-[make condition to see buried statue: have map]
-[make Clipboard / Timelog inside cabinet]
-[add path to 5_d]
-Base of Radio Tower is below Top of the Radio Tower.
-Petrified Grove is east of Base of Radio Tower. 
-
+Top of the Radio Tower is a room. "The radio tower sways slightly in the wind. The wastes stretch out in every direction. Below is the base of the radio tower. Exits are DOWN."
+	The radio transceiver is here. The radio transceiver is fixed in place. "There is a rusting radio transceiver bolted to the structure."
+	Instead of examining radio transceiver, say "A small cabinet is attached to the bottom of the transceiver."
+	The small cabinet is a closed container. The cabinet is part of the radio transceiver. The cabinet is fixed in place and openable.
+	After opening cabinet: say "Inside the small cabinet is a clipboard with what appears to be some sort of timesheet."; continue the action.
+	Instead of examining small cabinet, say "[if open] Inside the small cabinet is a clipboard with what appears to be some sort of timesheet.[otherwise] The cabinet is closed."
+	The timesheet is inside the cabinet.
+	Instead of examining timesheet, say "The timesheet reads that someone called MrAdministrator used to come here on a regular basis. The last signature is dated several years back ...".
 
 [room 6]
 Petrified Grove is a room. "The ground is littered with fragments of trees turned to to stone. Here an there are whole petrified trunks rising from the desert floor. Paths out of the grove lead EAST, SOUTH, SOUTHWEST, and WEST. Off to the SOUTH the noises of habitation drift through air."
