@@ -52,6 +52,7 @@ Base of Radio Tower is a room. "Rising above one of the higher dunes you see the
 	After taking loose stantion, say "You have pulled free one of the stantions. It is hollow and there are several smaller holes alongside it."
 [add path to 5i_u, 6_e]
 Top of the Radio Tower is above Radio Tower.
+Petrified Grove is east of Base of Radio Tower.
 [room 5i]
 Top of the Radio Tower is a room. "The radio tower sways slightly in the wind. The wastes stretch out in every direction. Below is the base of the radio tower. Exits are DOWN."
 	The radio transceiver is here. The radio transceiver is fixed in place. "There is a rusting radio transceiver bolted to the structure."
@@ -69,6 +70,7 @@ Petrified Grove is a room. "The ground is littered with fragments of trees turne
 Hard Pan Plain is east of Petrified Grove.
 Raider Camp is south of Petrified Grove.
 Dunes is southwest of Petrified Grove.
+Base of Radio Tower is west of Petrified Grove.
 
 
 
