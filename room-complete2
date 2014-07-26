@@ -1,0 +1,120 @@
+"Silenced Voices" by "Walter Phippeny and Julian Röth"
+
+
+[intro]
+
+
+[room 1]
+Caravan Attack Site is a room. "Strewn over the ground sits the remains of the caravan. There is a path here leading off to the EAST."
+
+[room 1 connects to room 2: east/west]
+Desert Path is east of Caravan Attack Site.
+
+[room 2]
+Desert Path is a room. "Sands and waste as far as you can see. The path here leads EAST and WEST."
+
+[room 2 connects to room 3: east/west]
+Caravan Attack Site is west of Desert Path.
+Sandy Gully is east of Desert Path.
+
+
+[room 3]
+Sandy Gully is a room. "The path dips here into a shallow ravine. The path here leads WEST and SOUTHEAST."
+[room 3 connects to room 7: south-east/north-west]
+Desert Path is west of Sandy Gully.
+Hard Pan Plain is southeast of Sandy Gully.
+
+
+[room 4]
+Scrub Land is a room. "You are standing on some hilly terrain covered with tumble weed clumps. The path leads SOUTH."
+
+[make tumble weed object]
+[make buried sign object]
+
+[room 4 connects to room 7: south/north]
+[room 4 connects to room 4i: up/down]
+Hard Pan Plain is south of Scrub Land.
+
+[room 4i]
+Buried Gas Station is a room. "Sun light filtering through the hole in the roof illuminates the murk of this buried tomb. There is a collection of pre-cataclysm junk here, the meaning of which you can't understand."
+
+[make pre-cataclysm map ]
+[make ladder]
+[make shovel]
+
+[room 4i connects to room 4: up/down]
+
+
+[room 5]
+Base of Radio Tower is a room. "Rising above one of the higher dunes you see the tower of an abandoned radio station. At the bottom there is a few loose stantions, it looks like the tower might collapse any second. You see a way you might climb the tower. Exits are UP and EAST."
+[make Stantion to pull away from tower]
+[add path to 5i_u, 6_e]
+Top of the Radio Tower is above Radio Tower.
+[room 5i]
+Top of the Radio Tower is a room. "The radio tower sways slightly in the wind. The wastes stretch out in every direction. There is a rusting radio transceiver bolted to the structure. Below is the base of the radio tower. Exits are DOWN. "
+
+[make condition to see buried statue: have map]
+[make Clipboard / Timelog inside cabinet]
+[add path to 5_d]
+Base of Radio Tower is below Top of the Radio Tower.
+Petrified Grove is east of Base of Radio Tower. 
+
+
+[room 6]
+Petrified Grove is a room. "The ground is littered with fragments of trees turned to to stone. Here an there are whole petrified trunks rising from the desert floor. Paths out of the grove lead EAST, SOUTH, SOUTHWEST, and WEST. Off to the SOUTH the noises of habitation drift through air."
+[add path to 5_w, 7_e, 8_sw, 9_s]
+
+Hard Pan Plain is east of Petrified Grove.
+Raider Camp is south of Petrified Grove.
+Dunes is southwest of Petrified Grove.
+
+
+
+[room 7]
+Hard Pan Plain is a room. "The ground here is cracked and flat. Less sand and more hard dirt: mud that dried out and turned sharp and brittle. The path NORTH leads out into some scrub land, SOUTH gets rocker and leads to a gavel pit, while you can make out a grove of petrified trees to the WEST."
+
+[add path to 3_nw, 4_n, 6_w, 10_s]
+Petrified Grove is west of Hard Pan Plain.
+Gravel Pit is south of Hard Pan Plain.
+
+
+
+[room 8]
+Dunes is a room. "The sand has collected here, forming undulating dunes; they seem to stretch off in every direction. The only ways out of this sea of sand are EAST and NORTHEAST. You can hear the sound of a settlement of the EAST."
+
+[Buried Roadside Attraction is a room. "The Object you spotted from the radio tower appears to be a hand, belonging to a statue buried underneath sand." JR]
+
+[condition to uncover statue: shovel completed && looked south from radio tower]
+[make body inside statue]
+[make IDcard hidden on body]
+[add path to 6_ne, 9_e]
+
+Raider Camp is east of Dunes.
+Petrified Grove is northeast of Dunes.
+
+
+[room 9]
+Raider Camp is a room. "A couple of shabby rusting tin sided structures surround a small oasis. At the perimeter of the camp, you see a pit for refuse. You can hear people talking and moving around. You suddenly feel like you shouldn't stay here very long. Exits are NORTH, EAST, and WEST."
+[make shoulder plate bone shovel]
+
+[add path to 6_n, 8_w, 10_e]
+Petrified Grove is north of Raider Camp.
+Dunes is west of Raider Camp.
+Gravel Pit is east of Raider Camp.
+
+[room 10]
+Gravel Pit is a room. "The ground becomes rocky and dips down into a kind of pit lined with rock and gravel. To the EAST you can make out a butte of rock. To the NORTH the ground turns into cracked hard pan. You can hear the subtle noise of some kind of settlement to the WEST." 
+[add path to 7_n, 9_w, 11_e]
+
+Hard Pan Plain is north of Gravel Pit.
+Raider Camp is west of Gravel Pit.
+Butte Side is east of Gravel Pit. 
+
+[room 11]
+Butte Side is room. "It looks like a large cave entrance might be in the side of the rocky butte, but everything is covered in sand and debris. The path here leads WEST, off to a gravel pit. "
+[add path to 10_w, 11i_d]
+
+Gravel Pit is west of Butter Side.
+
+[room 11i]
+Vault Inside is a room. "Darkness."
