@@ -96,11 +96,14 @@ Dunes is a room. "The sand has collected here, forming undulating dunes; they se
 Raider Camp is east of Dunes.
 Petrified Grove is northeast of Dunes.
 
-
 [room 9]
-Raider Camp is a room. "A couple of shabby rusting tin sided structures surround a small oasis. At the perimeter of the camp, you see a pit for refuse. You can hear people talking and moving around. You suddenly feel like you shouldn't stay here very long. Exits are NORTH, EAST, and WEST."
+Raider Camp is a room. "A couple of shabby rusting tin sided structures surround a small oasis. You can hear people talking and moving around. You suddenly feel like you shouldn't stay here very long. Exits are NORTH, EAST, and WEST."
 [make shoulder plate bone shovel]
-
+	The refuse pit is here. The refuse pit is an open container. The refuse pit is fixed in place. "At the perimeter of the camp, you see a pit for refuse."
+	Instead of examining refuse pit, say "In the refuse pit are the osseuos remains of countless human bodies."
+	The pile of bones is inside the refuse pit. The pile of bones is a supporter.
+	Instead of examining bones, say "[if shoulder plate is on pile of bones] You spot a shoulder plate amongst the bones. It might serve as a rudimentary shovel.[otherwise] You cannot even imagine how many people have died by the hands of these cannibals...".
+	The shoulder plate is on the pile of bones.
 [add path to 6_n, 8_w, 10_e]
 Petrified Grove is north of Raider Camp.
 Dunes is west of Raider Camp.
