@@ -36,7 +36,7 @@ Scrub Land is a room. "You are standing on some hilly terrain covered with tumbl
 	Hard Pan Plain is south of Scrub Land.
 
 [room 4i]
-In the buried gas station. "Sun light filtering through the hole in the roof illuminates the murk of this buried tomb."
+Buried Gas Station is a room. "Sun light filtering through the hole in the roof illuminates the murk of this buried tomb."
 
 	[make pre-cataclysm map ]
 	[make ladder]
