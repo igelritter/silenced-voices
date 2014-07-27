@@ -1,0 +1,22 @@
+"Silenced Voices_Room1" by "Walter Phippeny and Julian Röth"
+
+Release along with an interpreter. 
+Release along with the source text.
+
+[intro]
+When play begins:
+		now the story viewpoint is first person singular;
+
+[room 1]
+Caravan Attack Site is a room. "Strewn over the ground sits the remains of my caravan. If I want to leave this godforsaken desert alive, I better find some water ..."
+	Remains of the caravan is here. Remains is scenery.
+	The description is "Our destroyed carts are scattered around the area. It looks like the raiders took all we had. There are tracks and blood everywhere, but no bodies ... strange."
+	Some destroyed carts are part of remains.
+	The description is "[if waterskin is inside carts]Only thing I can find in one of the carts is an empty waterskin ... great.[otherwise]There is nothing left here, that could be of any use to me."
+	Empty Waterskin is inside destroyed carts. The description is "Not a single drop left ..."
+	Blood is here. Blood is scenery. The description is "Traces of blood are all over the place. My fellow travelers must have put up a good fight ..."
+	Some tracks are inside the remains. Tracks are scenery. The description is "The tracks seem to lead off to the east. Maybe I should follow them for now."
+	Instead of searching, say description.
+
+[room 2]
+Desert Path is a room east of Caravan Attack Site. "Sands and waste as far as I can see. I can keep following the tracks or go back WEST."
